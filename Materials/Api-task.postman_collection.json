@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "3a7ea73d-ddf3-4b62-aa50-aa517cfa73a6",
+		"name": "Api-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49781188",
+		"_collection_link": "https://farymaking20-9571755.postman.co/workspace/Yoh.-F.-Making's-Workspace~64060b83-ec22-4ce0-8347-77aa01876a2d/collection/49781188-3a7ea73d-ddf3-4b62-aa50-aa517cfa73a6?action=share&source=collection_link&creator=49781188"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"anggi\",\r\n    \"password\": \"12356\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJ0YXNrLWFwaSIsInN1YiI6ImZlcmFhYSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3NjcwNzAyNjIsImV4cCI6MTc2NzA3Mzg2MiwianRpIjoiZmEyNDBjZTEtZmM2OS00MGFhLWEzN2YtM2U1MmEwM2I0ZjUxIn0.QlY1hhNWtwRY3g7CP3mPPuetcVaniWtJlfLykniGonZWlRaEFOtRoOZHsGdSB9WPgjvBroO5LqUJJpnYeyiL2_EEaP9jzP9OeegrejLhX4oqPm9-Dn4YgFHNMjFOGp7H9N_UHw83Nu2syYsH9vpze3e3PIx978Z3KHffhZzStjNmg04lwYL8-kDvWocckNN1O_5cS7-6QkNaHGVBjQO4TKPzJmkwBdEu5eJAkfIt4Kig573ubjzBFl91A-YA_sNMahZEBZtFckk0YWAj1IomFFsgGIgzjWAozM_alHflCFjINIrr7ZvaGuk4KfsxMekG7RdEvj1L3rMg058kA6Q6TA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/user/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
